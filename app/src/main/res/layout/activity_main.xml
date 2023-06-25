@@ -43,7 +43,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
-                    android:orientation="horizontal"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/convertfromTitle"
@@ -52,14 +54,18 @@
                     android:layout_marginStart="10dp"
                     android:layout_weight="1.0"
                     android:text="Convert From"
-                    android:textColor="#000000"
+                    android:textColor="#000000">
+
+                </TextView>
 
                 <TextView
                     android:id="@+id/convertToTitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="Convert To"
+                    android:text="Convert To">
+                    
+                </TextView>
 
             </LinearLayout>
 
