@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:padding="12dp"
-            android:paddingBottom="10dp">
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/dropdown_menu_layout"
@@ -52,7 +53,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_weight="1.0"
                         android:text="Convert From"
-                        android:textColor="#000000">
+                        android:textColor="#000000" />
 
                         <TextView
                             android:id="@+id/convertToTitle"
@@ -60,15 +61,122 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1.0"
                             android:text="Convert To"
-                            android:textColor="#000000">
+                            android:textColor="#000000" />
+                </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/layout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <TextView
+                        android:id="@+id/convert_from_dropdown_menu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1.0"
+                        android:background="@android:drawable/editbox_background"
+                        android:hint="Select Country"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+                        app:drawableEndCompact="@drawable/baseline_arrow_drop_down_24"
+                        app:drawableRightCompact="@drawable/baseline_arrow_drop_down_24" />
 
-                    </TextView>
+                    <TextView
+                        android:id="@+id/convert_to_dropdown_menu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@android:drawable/editbox_background"
+                        android:hint="Select Country"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+                        app:drawableEndCompact="@drawable/baseline_arrow_drop_down_24"
+                        app:drawableRightCompact="@drawable/baseline_arrow_drop_down_24"/>
 
                 </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/amountToConvertValueText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1.0"
+                        android:text="Amount To Convert"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/conversionRateResultText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="Conversion Rate"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/amountToConvertValueText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1.0"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="000000"
+                        android:textSize="14sp"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/conversionRateText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Convert"
+                android:textColor="#000000" />
 
         </LinearLayout>
 
